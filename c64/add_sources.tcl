@@ -21,7 +21,7 @@ add_files [glob -nocomplain $rtl_dir/sid/*.sv]
 add_files [glob -nocomplain $rtl_dir/*.sv]
 
 set_property file_type {Memory Initialization Files} [get_files -quiet \
-    [glob -nocomplain $repo_root/c64/roms/*.hex $rtl_dir/*.hex]]
+    [glob -nocomplain $rtl_dir/*.hex $repo_root/c64/roms/games/*.hex]]
 set_property file_type {Memory Initialization Files} [get_files -quiet \
     [glob -nocomplain $repo_root/c64/roms/games/*.coe]]
 

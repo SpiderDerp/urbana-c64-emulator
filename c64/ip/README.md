@@ -20,8 +20,8 @@ Target output: **31.527956 MHz** on `clk_out1` from **100 MHz** `Clk`.
 
 Add to Vivado **Memory Initialization Files** (or set synthesis `-include_dirs`):
 
-- `c64/rtl/*.hex` — KERNAL, chargen ROMs (referenced by `c64_xilinx_rom`)
-- `c64/roms/games/default_ram.coe` — 64 KB RAM image (parameter `RAM_HEX` in `c64_memory.sv`)
+- `c64/rtl/*.hex` — KERNAL/chargen ROM init (`c64_xilinx_rom` / buslogic)
+- `c64/roms/games/default_ram.hex` — 64 KB RAM image (`RAM_HEX` in `c64_memory.sv`)
 
 ## Source files to add
 

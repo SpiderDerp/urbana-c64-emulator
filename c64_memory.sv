@@ -1,6 +1,6 @@
 // 64kb c64 ram, dual-port (c64 core + optional debug)
 module c64_memory #(
-    parameter string RAM_HEX = "default_ram.hex"
+    parameter string RAM_HEX = "c64/roms/games/default_ram.hex"
 ) (
     input  logic        clk,
     input  logic        ce,

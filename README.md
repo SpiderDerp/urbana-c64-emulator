@@ -28,15 +28,14 @@ Save states, disk drives (1541), cartridges, REU, paddles/mouse, PAL mode, and D
 ├── pin_assignment/         # Urbana XDC constraints
 ├── software/               # MicroBlaze USB keyboard firmware
 ├── key-reference/          # USB HID scan codes
-├── ip-repo/hdmi_tx_1.0/    # RealDigital HDMI encoder IP
+├── ip-repo/hdmi_tx_1.0/    # RealDigital HDMI encoder IP (hdl + component.xml)
 ├── c64/
-│   ├── rtl/                # C64 core (VHDL/SV, MiSTer/FPGA64 lineage)
-│   ├── roms/               # KERNAL/chargen COE/HEX + game RAM images
+│   ├── rtl/                # C64 core + ROM .hex init files
+│   ├── roms/games/         # Per-game RAM .coe / .hex images
 │   ├── scripts/            # mif2coe, prg2coe, merge_ram_coe
 │   ├── ip/                 # clk_wiz_c64, Vivado TCL helpers
 │   ├── README.md           # Core + Vivado details
 │   └── GAME_LOADING.md     # How to build game BRAM images
-└── ddr3-stuff/             # Reference only (not used by C64 build)
 ```
 
 ## Quick start (Vivado)

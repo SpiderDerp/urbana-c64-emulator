@@ -82,7 +82,7 @@ def write_hex(path: Path, width: int, depth: int, data: dict):
 
 def main():
     if len(sys.argv) < 2:
-        print(f"usage: {sys.argv[0]} file.mif [out_dir]")
+        print(f"usage: {sys.argv[0]} file.mif [out_dir=../rtl]")
         sys.exit(1)
     src = Path(sys.argv[1])
     out_dir = Path(sys.argv[2]) if len(sys.argv) > 2 else src.parent
